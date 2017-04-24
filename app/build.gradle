@@ -18,6 +18,7 @@ android {
         }
         debug{
             buildConfigField "String", "LIG_DOMAIN", "\"@ligchatup.com\""
+            debuggable false
         }
         android.applicationVariants.all { variant ->
             variant.outputs.each { output ->

@@ -10,6 +10,7 @@
     <!-- Sign in error messages-->
     <string name="sign_in_error_empty_field">username/password must not be empty</string>
     <string name="sign_in_error_password">password must be at least 8 characters</string>
+    <string name="sign_in_error_space">username must not contain white space</string>
 
     <!-- AuthTask messages-->
     <string name="error_task_noRecord">There is no user record corresponding to this identifier. The user may have been deleted.</string>

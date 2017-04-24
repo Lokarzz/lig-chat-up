@@ -49,6 +49,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 password = passwordEt.getText().toString();
                 if(userName.isEmpty() || password.isEmpty()){
                     err = getString(R.string.sign_in_error_empty_field);
+                }else if(!userName.matches("\\S+")){
+                    err = getString(R.string.sign_in_error_space);
                 }else if(password.length() < 8){
                     err = getString(R.string.sign_in_error_password);
                 }
@@ -131,8 +133,13 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     private void goToChatUp(){
         progressDialog.dismiss();
+        clearField();
         Intent intent = new Intent(this, LigChatActivity.class);
         this.startActivity (intent);
     }
 
+    private void clearField(){
+        userNameEt.setText("");
+        passwordEt.setText("");
+    }
 }
