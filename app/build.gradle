@@ -19,6 +19,12 @@ android {
         debug{
             buildConfigField "String", "LIG_DOMAIN", "\"@ligchatup.com\""
         }
+        android.applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def file = output.outputFile
+                output.outputFile = new File(file.parent, file.name.replace(".apk", "_" + "LigChatUp" + ".apk"))
+            }
+        }
     }
 }
 

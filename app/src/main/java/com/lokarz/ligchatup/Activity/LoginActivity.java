@@ -32,7 +32,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         progressDialog = ViewUtil.getProgressDialog(this);
         checkCurrentUser();
         setContentView(R.layout.activity_login);
-
         userNameEt = (EditText) findViewById(R.id.userName_et);
         passwordEt = (EditText) findViewById(R.id.password_et);
         loginSignUpBtn = (Button) findViewById(R.id.login_signup_btn);
@@ -122,8 +121,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         String errMsg = task.getException().getMessage();
         if(errMsg.equals(getString(R.string.error_task_noRecord))){
             createUser(userName, password);
-        }else if(errMsg.equals(getString(R.string.error_password_invalid))){
-            ViewUtil.displayToastMsg(this, "Password is incorrect");
         }else{
             ViewUtil.displayToastMsg(this, errMsg);
             progressDialog.dismiss();
