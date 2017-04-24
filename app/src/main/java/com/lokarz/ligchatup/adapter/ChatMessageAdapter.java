@@ -52,12 +52,10 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<ChatMessageAdapter.
             holder.messageContainerLl.setGravity(Gravity.RIGHT);
             holder.arrowLeftIv.setVisibility(View.GONE);
             holder.arrowRightIv.setVisibility(View.VISIBLE);
-//            holder.messageTv.setBackground(context.getDrawable(R.drawable.message_out_bubble));
         }else{
             holder.messageContainerLl.setGravity(Gravity.LEFT);
             holder.arrowRightIv.setVisibility(View.GONE);
             holder.arrowLeftIv.setVisibility(View.VISIBLE);
-//            holder.messageTv.setBackground(context.getDrawable(R.drawable.message_in_bubble));
         }
     }
 
