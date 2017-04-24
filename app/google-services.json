@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "83700230542",
+    "firebase_url": "https://ligchatup.firebaseio.com",
+    "project_id": "ligchatup",
+    "storage_bucket": "ligchatup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83700230542:android:908b42e805ffd4f5",
+        "android_client_info": {
+          "package_name": "com.lokarz.ligchatup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83700230542-2g4il0nb6bmhglusgamjqm51jmnk20ea.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyEq_Yi7bGQlxWerGTBwMsadJ1Htqhy7E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

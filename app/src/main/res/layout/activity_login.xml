@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.lokarz.ligchatup.Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Chat app"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="16dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="25dp"/>
+
+
+        <EditText
+            android:id="@+id/userName_et"
+            android:background="@drawable/solid_rectangle_light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User name"
+            android:padding="14dp"
+            android:maxLength="25"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:background="@drawable/solid_rectangle_light_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:maxLength="25"
+            android:padding="14dp"
+            android:layout_margin="16dp"/>
+
+        <Button
+            android:id="@+id/login_signup_btn"
+            android:background="@drawable/solid_rectangle_light_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:text="@string/sign_up_btn"
+            android:layout_margin="16dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_tnc"
+            android:layout_margin="16dp"
+            android:lineSpacingExtra="3dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    tools:context="com.lokarz.ligchatup.adapter.ChatMessageAdapter">
+
+    <LinearLayout
+        android:id="@+id/message_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/arrow_left_iv"
+                style="@style/ArrowIcon"
+                android:layout_alignLeft="@+id/message_tv"
+                />
+
+            <ImageView
+                android:id="@+id/arrow_right_iv"
+                style="@style/ArrowIcon"
+                android:layout_alignRight="@+id/message_tv" />
+
+            <TextView
+                android:id="@+id/message_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="@drawable/message_out_bubble"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:text="aa"/>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/sender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="sender"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

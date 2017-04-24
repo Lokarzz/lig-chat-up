@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.lokarz.ligchatup.Activity.LigChatActivity">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat app"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_margin="16dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/logout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/solid_rectangle_gray"
+                android:text="Log out"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_messages_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_above="@+id/message_bar"
+        android:layout_below="@+id/title_bar"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/message_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/message_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/solid_rectangle_light_gray"
+            android:layout_weight="0.8"
+            android:hint="Start a new message"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/solid_rectangle_able_state"
+            android:text="send"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:enabled="false"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
