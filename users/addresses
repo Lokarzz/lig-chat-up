@@ -1,0 +1,16 @@
+[
+{
+    "type": "home",
+    "name": "My address1",
+    "postalCode": "6311",
+    "address_line_1": "Purok 2, Dagohoy",
+    "barangayId": 1
+},
+{
+    "type": "home",
+    "name": "My address2",
+    "postalCode": "6311",
+    "address_line_1": "Purok 2, Dagohoy",
+    "barangayId": 2
+},
+]
