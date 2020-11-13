@@ -8,9 +8,9 @@
     "barangayId": 1
 },
 {
-    "type": "home",
-    "name": "My address2",
-    "postalCode": "6311",
+    "type": "office",
+    "name": "My address2 test",
+    "postalCode": "631121",
     "address_line_1": "Purok 2, Dagohoy",
     "barangayId": 2
 }
